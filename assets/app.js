@@ -2,7 +2,7 @@
   "use strict";
 
       
-  var PASSCODE = "1234";
+  var PASSCODE = "1511";
   var LOADING_MS = 3000;
 
   var FLOWER_CYCLE = [

@@ -15,7 +15,7 @@ A romantic interactive gift website inspired by the Instagram viral floral gift 
 - 📱 **Mobile & Desktop Responsive**: Tailored for both phone screens and desktop browsers.
 
 ## 🔑 Default Passkey
-The padlock passkey is set to `1234` by default (can be customized in `assets/app.js`).
+The padlock passkey is set to `1511` by default (can be customized in `assets/app.js`).
 
 ## 🚀 Live Demo & Deployment
 Deployed via GitHub Pages:
