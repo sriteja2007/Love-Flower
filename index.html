@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <link rel="stylesheet" href="css2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+
+    <title>💌 For You | Love Flower</title>
+    <meta name="description" content="A romantic virtual gift of flowers for my love." />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="gift-landing">
+      <div class="gift-fade-veil" aria-hidden="true"></div>
+      <div class="gift-stage">
+        <div class="gift-click-wrap">
+          <button id="gift-box-btn" class="gift-box-btn" aria-label="Open your gift">
+            <img src="assets/giftbox.png" alt="" width="320" height="320" />
+          </button>
+          <p class="gift-caption">For you, my baby.</p>
+          <p class="gift-hint">(tap to open)</p>
+        </div>
+        <div id="bloom-field" class="bloom-field" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div id="page2">
+      <div class="page2-tint" aria-hidden="true"></div>
+
+      <div class="page2-content">
+        <div id="rose-deco" class="rose-deco">
+          <img src="assets/photos/rose.png" alt="" draggable="false" />
+        </div>
+
+        <section class="hero">
+          <h1>From me to you.</h1>
+          <p class="sub">This is how much I love you.</p>
+          <div class="centre-wrap">
+            <img src="assets/photos/centre.png" alt="Us" />
+          </div>
+          <div class="flourish" aria-hidden="true">
+            <span class="sm">&#10022;</span>
+            <span class="heart">&#9825;</span>
+            <span class="sm">&#10022;</span>
+          </div>
+        </section>
+
+        <section class="smile-section">
+          <div id="smile-card" class="smile-card">
+            <span class="deco d1" aria-hidden="true">&#9829;</span>
+            <span class="deco d2" aria-hidden="true">&#10048;</span>
+            <span class="deco d3" aria-hidden="true">&#9829;</span>
+            <span class="deco d4" aria-hidden="true">&#10023;</span>
+            <p>
+              In your <span class="hl-smile">smile</span>, I found my <span class="hl-peace">peace</span>.<br />
+              In your <span class="hl-love">love</span>, I found my <span class="hl-home">home</span>.
+            </p>
+          </div>
+        </section>
+
+        <div class="lock-gate-zone">
+          <div class="lock-gate-sticky">
+            <button id="lock-btn" class="lock-btn" aria-label="Tap to unlock">
+              <img src="assets/photos/locked.png" alt="" draggable="false" />
+            </button>
+            <p id="lock-hint" class="lock-hint">tap to open</p>
+            <p id="lock-unlocked-msg" class="lock-unlocked-msg" style="display: none">&#10003; Unlocked</p>
+          </div>
+        </div>
+        <div class="lock-gate-buffer" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div id="page3">
+      <div class="page2-tint" aria-hidden="true"></div>
+      <button id="page3-back" class="page3-back" aria-label="Back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        <span>Back</span>
+      </button>
+
+      <div class="page2-content">
+        <section id="photo-grid-section" class="photo-grid-section">
+          <div id="photo-grid" class="photo-grid"></div>
+        </section>
+
+        <section id="letter-section" class="letter-section">
+          <div class="letter-card">
+            <p id="letter-words"></p>
+          </div>
+        </section>
+
+        <div class="heart-divider" aria-hidden="true"><span>&#9825;</span></div>
+
+        <section id="footer-section" class="footer-section">
+          <h2>I will always love you</h2>
+          <p>From, your forever</p>
+        </section>
+      </div>
+    </div>
+
+    <div id="passkey-overlay" class="passkey-overlay">
+      <div class="pk-orb" aria-hidden="true"></div>
+      <div id="pk-particles" class="pk-particles" aria-hidden="true"></div>
+
+      <button id="pk-close" class="pk-close" aria-label="Close">&#10005;</button>
+
+      <div class="pk-lock-wrap">
+        <div class="pk-ring1"></div>
+        <div class="pk-ring2"></div>
+        <img src="assets/photos/locked.png" alt="" draggable="false" />
+      </div>
+
+      <p id="pk-title" class="pk-title">Enter Passkey</p>
+
+      <div id="pk-dots" class="pk-dots">
+        <span class="pk-dot"></span>
+        <span class="pk-line"></span>
+        <span class="pk-dot"></span>
+        <span class="pk-line"></span>
+        <span class="pk-dot"></span>
+        <span class="pk-line"></span>
+        <span class="pk-dot"></span>
+      </div>
+
+      <p id="pk-error-msg" class="pk-error-msg">wrong passkey, try again</p>
+
+      <div id="pk-keypad" class="pk-keypad">
+        <button type="button" class="pk-key" data-key="1">1</button>
+        <button type="button" class="pk-key" data-key="2">2</button>
+        <button type="button" class="pk-key" data-key="3">3</button>
+        <button type="button" class="pk-key" data-key="4">4</button>
+        <button type="button" class="pk-key" data-key="5">5</button>
+        <button type="button" class="pk-key" data-key="6">6</button>
+        <button type="button" class="pk-key" data-key="7">7</button>
+        <button type="button" class="pk-key" data-key="8">8</button>
+        <button type="button" class="pk-key" data-key="9">9</button>
+        <div class="pk-key pk-empty"></div>
+        <button type="button" class="pk-key" data-key="0">0</button>
+        <button type="button" class="pk-key pk-del" data-key="del">Clear</button>
+      </div>
+    </div>
+
+    <div id="loading-overlay" class="loading-overlay">
+      <div class="wreath-wrap">
+        <div class="wreath">
+          <div class="wreath-item" style="--i: 0"><img src="assets/flowers/flower-1.png" alt="" /></div>
+          <div class="wreath-item" style="--i: 1"><img src="assets/flowers/flower-1.png" alt="" /></div>
+          <div class="wreath-item" style="--i: 2"><img src="assets/flowers/flower-2.png" alt="" /></div>
+          <div class="wreath-item" style="--i: 3"><img src="assets/flowers/flower-2.png" alt="" /></div>
+          <div class="wreath-item" style="--i: 4"><img src="assets/flowers/flower-1.png" alt="" /></div>
+          <div class="wreath-item" style="--i: 5"><img src="assets/flowers/flower-1.png" alt="" /></div>
+          <div class="wreath-item" style="--i: 6"><img src="assets/flowers/flower-2.png" alt="" /></div>
+          <div class="wreath-item" style="--i: 7"><img src="assets/flowers/flower-2.png" alt="" /></div>
+        </div>
+      </div>
+      <p class="loading-text">Loading</p>
+    </div>
+
+    <audio id="bg-music" src="assets/music.mp3" loop preload="auto"></audio>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var giftBtn = document.getElementById("gift-box-btn");
+        if (giftBtn) {
+          giftBtn.addEventListener("click", function() {
+            var music = document.getElementById("bg-music");
+            if (music) {
+              music.play().catch(function(err) {
+                console.log("Music play prevented or error:", err);
+              });
+            }
+          });
+        }
+      });
+    </script>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
